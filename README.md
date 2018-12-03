@@ -14,7 +14,7 @@
 
 6. 支持middleware模式(类似于express,koa中的middleware,类似于java中的拦截器)
 
-7. 支持参数教研功能,支持XML, JSON, YAML and ProtoBuf rendering
+7. 支持参数校验功能,支持XML, JSON, YAML and ProtoBuf rendering
 
 8. 支持轻量级的模板(如果groovy模板html template)
 
