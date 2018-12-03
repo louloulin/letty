@@ -1,0 +1,24 @@
+group 'com.lincker'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+def slf4jApiVersion = '1.7.21'
+def nettyVersion = '4.1.18.Final'
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: slf4jApiVersion
+    compile group: 'io.netty', name: 'netty-codec-http', version: nettyVersion
+    compile group: 'io.netty', name: 'netty-handler', version: nettyVersion
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.18'
+
+
+}
